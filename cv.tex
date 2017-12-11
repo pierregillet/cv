@@ -4,12 +4,41 @@
 \usepackage[T1]{fontenc}
 \usepackage[top=0.6cm, bottom=0.6cm, left=1.0cm, right=1.0cm]{geometry}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% \makeatletter
+%% \renewcommand*{\maketitle}{%
+%%  \setlength{\maketitlewidth}{0.8\textwidth}
+%%   \hfill
+%%   \parbox{\maketitlewidth}{%
+%%    \centering
+%%     % name and title
+%%     \namestyle{\@firstname~\@lastname}%
+%%     \ifthenelse{\equal{\@title}{}}{}{\titlestyle{~|~\@title}}\\% \isundefined doesn't work on \@title, as LaTeX itself defines \@title (before it possibly gets redefined by \title) 
+%%     % detailed information
+%%     \addressfont\color{color2}%
+%%     \ifthenelse{\isundefined{\@addressstreet}}{}{\addtomaketitle{\addresssymbol\@addressstreet}%
+%%       \ifthenelse{\equal{\@addresscity}{}}{}{\addtomaketitle[~--~]{\@addresscity}}% if \addresstreet is defined, \addresscity and \addresscountry will always be defined but could be empty
+%%       \ifthenelse{\equal{\@addresscountry}{}}{}{\addtomaketitle[~--~]{\@addresscountry}}%
+%%       \flushmaketitle\@firstmaketitleelementtrue\\}%
+%%     \collectionloop{phones}{% the key holds the phone type (=symbol command prefix), the item holds the number
+%%       \addtomaketitle{\csname\collectionloopkey phonesymbol\endcsname\collectionloopitem}}%
+%%     \ifthenelse{\isundefined{\@email}}{}{\addtomaketitle{\emailsymbol\emaillink{\@email}}}%
+%%     \ifthenelse{\isundefined{\@homepage}}{}{\addtomaketitle{\homepagesymbol\httplink{\@homepage}}}%
+%%     \collectionloop{socials}{% the key holds the social type (=symbol command prefix), the item holds the link
+%%       \addtomaketitle{\csname\collectionloopkey socialsymbol\endcsname\collectionloopitem}}%
+%%     \ifthenelse{\isundefined{\@extrainfo}}{}{\addtomaketitle{\@extrainfo}}%
+%%     \flushmaketitle}\\[2.5em]}% need to force a \par after this to avoid weird spacing bug at the first section if no blank line is left after \maketitle
+%% \makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \moderncvtheme[blue]{classic}
 \nopagenumbers{}
 
 \firstname{Pierre}
 \familyname{Gillet}
-\address{Cité Universitaire Arc-en-Ciel}{13100 Aix-en-Provence} 
+\address{Cité Universitaire Arc-de-Meyran}{13100 Aix-en-Provence} 
 \phone[mobile]{+33\,6\,09\,89\,44\,22}
 \email{pierre.gillet@linuxw.info}
 %% \homepage{floss.win}
@@ -28,7 +57,7 @@
 \vspace{-8mm}
 \section{Projet professionnel}
 \begin{center}
-  \parbox{18cm}{Je souhaite poursuivre mes études au delà du DUT, jusqu'au niveau Bac+5, voire Bac+8 avec la préparation d'un Doctorat si j'en ai la possibilité.
+  \parbox{18cm}{Je souhaite poursuivre mes études au delà du DUT, jusqu'au niveau Bac+5 au moins.\newline
     Je désire me diriger vers du développement logiciel.}
 \end{center}
 
@@ -38,7 +67,7 @@
   \textbf{Python},
   \textbf{Java},
   \textbf{C++},
-  JavaScript,
+  JavaScript (bases),
   C,
   Assembleur (MIPS),
   algorithmique
@@ -52,8 +81,9 @@
 }
 
 \cvitem{Systèmes}{
-  GNU/Linux (Arch Linux, Debian),
-  Nginx
+  GNU/Linux (\textbf{Arch Linux}, Debian),
+  \textbf{Nginx},
+  VNC
 }
 
 \cvitem{Réseaux}{
@@ -69,19 +99,20 @@
   MariaDB/MySQL
 }
 
-\cvitem{Éditeurs de texte}{
-  Emacs,
-  Vim,
-  IntelliJ IDEA,
-  PyCharm,
-  Qt Creator
+\cvitem{IDE\,/\,Éditeurs}{
+  \textbf{IntelliJ IDEA},
+  \textbf{CLion},
+  \textbf{PyCharm},
+  Qt Creator,
+  \textbf{Emacs},
+  Vim
 }
 
 \cvitem{Outils}{
   Maven,
   Make,
   VirtualBox,
-  JavaFX (IHM),
+  \textbf{JavaFX} (IHM),
 }
 
 \textbf{Associées\newline}
@@ -138,7 +169,7 @@
 \cvitem{\textbf{Veille technologique}}{
   GNU/Linux,
   programmation,
-  libre/open source,
+  libre/Open Source,
   Reddit,
   crypto-monnaies (Bitcoin),\newline
   communications sécurisées,
@@ -149,8 +180,13 @@
   OpenStreetMap
 }
 
-\cvitem{\textbf{Logiciel libre}}{Contributions au développement de logiciels libres}
+\cvitem{\textbf{Logiciel libre}}{
+  Contributions au développement de logiciels libres
+}
 
-\cvitem{\textbf{Escalade}}{Pratique compétitive au niveau régional}
+\cvitem{\textbf{Escalade}}{
+  Pratique compétitive au niveau régional,
+  diplôme d'Initiateur SAE délivré par la FFME
+}
 
 \end{document}
