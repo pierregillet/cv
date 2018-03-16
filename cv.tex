@@ -8,20 +8,29 @@
 %% \nopagenumbers{}
 
 \firstname{Pierre}
-\familyname{Gillet}
+\familyname{
+  Gillet\\
+  {\small 19\,ans, permis B, véhicule personnel}
+}
 %% \address{Cité Universitaire Arc-de-Meyran}{13100 Aix-en-Provence} 
-\address{}{13100, Aix-en-Provence} 
+\address{125 allée des bastides}{83470, S\up{t}-Maximin-la-S\up{te}-Baume} 
 \phone[mobile]{06\,09\,89\,44\,22}
 \email{pierre.gillet@linuxw.info}
 %% \homepage{floss.win}
 \social[linkedin]{pierre-gillet-884393144}
 \social[github]{pierregillet}
 %% \social[stackexchange]{8394677}
-\extrainfo{19\,ans}
+%% \extrainfo{19\,ans}
 
 %% \photo[64pt]{img/photo_profil.jpg}
 
-%% \title{\parbox{11cm}{\large Étudiant en DUT Informatique en alternance, je compte poursuivre des études longues.}}
+\title{
+  \vspace{-6mm} 
+  \parbox{16cm}{
+  \large
+  Je souhaite réaliser le Bachelor «\,Video Game Development\,»  à UWS.
+  }
+}
 
 \usepackage{etoolbox}
 \patchcmd{\makecvhead}{{minipage}[b]}{{minipage}[t]}{}{}
@@ -31,11 +40,14 @@
 
 \maketitle
 
-\vspace{-14mm}
+\vspace{-16mm}
 \section{Projet professionnel}
-Je souhaite poursuivre les études jusqu'au doctorat, et exercer le métier d'enseignant-chercheur en Informatique.
+Passionné d'Informatique et de culture libre,
+je souhaite poursuivre les études jusqu'au doctorat, et exercer le métier d'enseignant-chercheur en Informatique.
 
+\vspace{-1mm}
 \section{Compétences et connaissances}
+\vspace{-1mm}
 \textbf{Spécialisées\newline}
 \cvitem{Programmation}{
   \textbf{Python},
@@ -112,9 +124,6 @@ Je souhaite poursuivre les études jusqu'au doctorat, et exercer le métier d'en
   Anglais (CEFR niveau B1 validé par l'examen {\em Cambridge English Preliminary}),\newline
   Espagnol niveau débutant
 }
-%% \cvlanguage{Anglais}{CEFR niveau B1}{validé par l'examen «\,Cambridge English Preliminary\,»}
-%% \cvlanguage{Espagnol}{niveau débutant}{}
-
 
 \cvitem{Bureautique}{
   \LaTeX,
@@ -129,12 +138,16 @@ Je souhaite poursuivre les études jusqu'au doctorat, et exercer le métier d'en
   Méthodes Agiles
 }
 
+\vspace{-1mm}
 \section{Formation}
+\vspace{-1mm}
 \cventry{2016\,--\,actuel}{Préparation d'un diplôme Universitaire de Technologie en Informatique}{IUT}{\newline Aix-en-Provence}{}{2\textsuperscript{de} année en alternance}
 
 \cventry{2016}{Baccalauréat Scientifique, série Sciences de l'Ingénieur}{}{}{\mbox{mention \em{bien}}}{Spécialité Informatique et Sciences du Numérique}
 
+\vspace{-1mm}
 \section{Expérience professionnelle}
+\vspace{-1mm}
 \cventry{2017}{Projet tutoré}
         {pédagogique, hexanôme}{}{}{
           Conception d'un service de calculs d'itinéraires basé sur les cartes OpenStreetMap.\newline
@@ -147,7 +160,9 @@ Je souhaite poursuivre les études jusqu'au doctorat, et exercer le métier d'en
           Réalisation d'un système de gestion de caisse en ligne avec le «\,framework\,» Symfony 3.
         }
 
+\vspace{-1mm}
 \section{Centres d'intérêt}
+\vspace{-1mm}
 \cvitem{\textbf{Événements}}{
   Hack to the Future,
   Nuit de l'Info 2017
@@ -174,7 +189,9 @@ Je souhaite poursuivre les études jusqu'au doctorat, et exercer le métier d'en
 
 %% \clearpage
 
+\vspace{-1mm}
 \section{Projets et réalisations}
+\vspace{-1mm}
 %% \cventry{2016}{Projet web}
 %%         {pédagogique, pentanôme}{}{}{
 %%           Réalisation d'un site web en HTML5, CSS3 et PHP, utilisant Gettext pour traduire du contenu.
@@ -190,6 +207,5 @@ Je souhaite poursuivre les études jusqu'au doctorat, et exercer le métier d'en
           Réalisation d'un jeu écrit en C/C++, utilisant la bibliothèque graphique SDL.
           Nous avons poursuivi ce projet en dehors du cadre scolaire après l'avoir rendu.
         }
-
-
+        
 \end{document}
