@@ -1,65 +1,39 @@
 \documentclass[11pt,a4paper]{moderncv}
 \usepackage[utf8]{inputenc}
-\usepackage[francais]{babel}
+\usepackage[french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[top=0.6cm, bottom=0.6cm, left=1.0cm, right=1.0cm]{geometry}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% \makeatletter
-%% \renewcommand*{\maketitle}{%
-%%  \setlength{\maketitlewidth}{0.8\textwidth}
-%%   \hfill
-%%   \parbox{\maketitlewidth}{%
-%%    \centering
-%%     % name and title
-%%     \namestyle{\@firstname~\@lastname}%
-%%     \ifthenelse{\equal{\@title}{}}{}{\titlestyle{~|~\@title}}\\% \isundefined doesn't work on \@title, as LaTeX itself defines \@title (before it possibly gets redefined by \title) 
-%%     % detailed information
-%%     \addressfont\color{color2}%
-%%     \ifthenelse{\isundefined{\@addressstreet}}{}{\addtomaketitle{\addresssymbol\@addressstreet}%
-%%       \ifthenelse{\equal{\@addresscity}{}}{}{\addtomaketitle[~--~]{\@addresscity}}% if \addresstreet is defined, \addresscity and \addresscountry will always be defined but could be empty
-%%       \ifthenelse{\equal{\@addresscountry}{}}{}{\addtomaketitle[~--~]{\@addresscountry}}%
-%%       \flushmaketitle\@firstmaketitleelementtrue\\}%
-%%     \collectionloop{phones}{% the key holds the phone type (=symbol command prefix), the item holds the number
-%%       \addtomaketitle{\csname\collectionloopkey phonesymbol\endcsname\collectionloopitem}}%
-%%     \ifthenelse{\isundefined{\@email}}{}{\addtomaketitle{\emailsymbol\emaillink{\@email}}}%
-%%     \ifthenelse{\isundefined{\@homepage}}{}{\addtomaketitle{\homepagesymbol\httplink{\@homepage}}}%
-%%     \collectionloop{socials}{% the key holds the social type (=symbol command prefix), the item holds the link
-%%       \addtomaketitle{\csname\collectionloopkey socialsymbol\endcsname\collectionloopitem}}%
-%%     \ifthenelse{\isundefined{\@extrainfo}}{}{\addtomaketitle{\@extrainfo}}%
-%%     \flushmaketitle}\\[2.5em]}% need to force a \par after this to avoid weird spacing bug at the first section if no blank line is left after \maketitle
-%% \makeatother
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+ 
 \moderncvtheme[blue]{classic}
-\nopagenumbers{}
+%% \nopagenumbers{}
 
 \firstname{Pierre}
 \familyname{Gillet}
-\address{Cité Universitaire Arc-de-Meyran}{13100 Aix-en-Provence} 
-\phone[mobile]{+33\,6\,09\,89\,44\,22}
+%% \address{Cité Universitaire Arc-de-Meyran}{13100 Aix-en-Provence} 
+\address{}{13100, Aix-en-Provence} 
+\phone[mobile]{06\,09\,89\,44\,22}
 \email{pierre.gillet@linuxw.info}
 %% \homepage{floss.win}
-\social[github]{pierregillet}
 \social[linkedin]{pierre-gillet-884393144}
-\extrainfo{02/10/1998}
+\social[github]{pierregillet}
+%% \social[stackexchange]{8394677}
+\extrainfo{19\,ans}
 
-\photo[64pt][0.4pt]{../photos/photo_cv_petite_retouchee.png}
+%% \photo[64pt]{img/photo_profil.jpg}
 
-\title{\parbox{11cm}{\large Étudiant en DUT Informatique, je recherche une entreprise afin de réaliser une alternance d'1 an à partir du 5 septembre 2017, avec 31 semaines en entreprise et 21 en Université.}}
+%% \title{\parbox{11cm}{\large Étudiant en DUT Informatique en alternance, je compte poursuivre des études longues.}}
+
+\usepackage{etoolbox}
+\patchcmd{\makecvhead}{{minipage}[b]}{{minipage}[t]}{}{}
+\patchcmd{\makecvhead}{{tabular}[b]}{{tabular}}{}{}
 
 \begin{document}
 
 \maketitle
 
-\vspace{-8mm}
+\vspace{-14mm}
 \section{Projet professionnel}
-\begin{center}
-  \parbox{18cm}{Je souhaite poursuivre mes études au delà du DUT, jusqu'au niveau Bac+5 au moins.\newline
-    Je désire me diriger vers du développement logiciel.}
-\end{center}
+Je souhaite poursuivre les études jusqu'au doctorat, et exercer le métier d'enseignant-chercheur en Informatique.
 
 \section{Compétences et connaissances}
 \textbf{Spécialisées\newline}
@@ -67,23 +41,36 @@
   \textbf{Python},
   \textbf{Java},
   \textbf{C++},
-  JavaScript (bases),
+  PHP,
+  Symfony,
+  Bash,
+  JavaScript,
   C,
-  Assembleur (MIPS),
-  algorithmique
+  Assembleur (MIPS),
+  algorithmique,
+  Flask,
+  SlimFramework
 }
 
 \cvitem{Développement}{
-  \textbf{Git (gestion de version)},
+  \textbf{Git (gestion de version)},
   débuggers,
   UML,
-  intégration continue
+  modèles conceptuels de données, 
+  intégration continue,
+  tests unitaires,
+  GitHub,
+  GitLab,
+  Gogs,
+  PHPUnit,
+  Maven,
+  Make
 }
 
 \cvitem{Systèmes}{
-  GNU/Linux (\textbf{Arch Linux}, Debian),
-  \textbf{Nginx},
-  VNC
+  GNU\,/\,Linux (\textbf{Arch Linux}, Debian),
+  Nginx,
+  Apache 2
 }
 
 \cvitem{Réseaux}{
@@ -95,89 +82,85 @@
 
 \cvitem{Bases de données}{
   SQL,
-  PL/SQL,
-  MariaDB/MySQL
+  PL\,/\,SQL,
+  MariaDB\,/\,MySQL,
+  Triggers
 }
 
 \cvitem{IDE\,/\,Éditeurs}{
-  \textbf{IntelliJ IDEA},
-  \textbf{CLion},
+  \textbf{IntelliJ IDEA},
   \textbf{PyCharm},
+  PhpStorm,
   Qt Creator,
   \textbf{Emacs},
-  Vim
+  Vim,
+  Subliminal,
+  Atom
 }
 
 \cvitem{Outils}{
-  Maven,
-  Make,
+  \textbf{JavaFX},
+  \textbf{GTK+},
+  PHPMyAdmin,
+  MySQL Workbench,
   VirtualBox,
-  \textbf{JavaFX} (IHM),
+  Docker
 }
 
 \textbf{Associées\newline}
 \cvitem{Langues}{
-  Anglais (CEFR niveau B1 validé par l'examen {\em Cambridge English Preliminary}),\newline
+  Anglais (CEFR niveau B1 validé par l'examen {\em Cambridge English Preliminary}),\newline
   Espagnol niveau débutant
 }
+%% \cvlanguage{Anglais}{CEFR niveau B1}{validé par l'examen «\,Cambridge English Preliminary\,»}
+%% \cvlanguage{Espagnol}{niveau débutant}{}
+
 
 \cvitem{Bureautique}{
-  LibreOffice,
-  \LaTeX
+  \LaTeX,
+  LibreOffice
 }
 
 \cvitem{Autres}{
   Comptabilité,
   Droit,
-  Économie
+  Économie,
+  Gestion d'entreprises,
+  Méthodes Agiles
 }
 
-\section{Projets et réalisations}
+\section{Formation}
+\cventry{2016\,--\,actuel}{Préparation d'un diplôme Universitaire de Technologie en Informatique}{IUT}{\newline Aix-en-Provence}{}{2\textsuperscript{de} année en alternance}
+
+\cventry{2016}{Baccalauréat Scientifique, série Sciences de l'Ingénieur}{}{}{\mbox{mention \em{bien}}}{Spécialité Informatique et Sciences du Numérique}
+
+\section{Expérience professionnelle}
 \cventry{2017}{Projet tutoré}
-        {pédagogique, équipe de 6}{}{}{
+        {pédagogique, hexanôme}{}{}{
           Conception d'un service de calculs d'itinéraires basé sur les cartes OpenStreetMap.\newline
           Gestion de projet, et travail en groupe.\newline
           Réalisation d'une IHM avec la bibliothèque JavaFX.
         }
 
-\cventry{2016}{Projet web}
-        {pédagogique}{}{}{
-          Réalisation d'un site web en HTML5 et CSS3 présentant le projet tutoré, faisant usage de JavaScript.
+\cventry{2017\,-\,2018}{Chargé de projet}
+        {Agence Boeki}{Aix-en-Provence}{alternance}{
+          Réalisation d'un système de gestion de caisse en ligne avec le «\,framework\,» Symfony 3.
         }
-
-\cventry{2016}{Projet C++}
-        {pédagogique, équipe de 4}{}{}{
-          Réalisation d'un jeu en terminal écrit en C++, utilisant la bibliothèque ncurses.
-        }
-
-\cventry{3 mois\\2016}{Projet C/C++}
-        {pédagogique continué en projet personnel, trinôme}{}{}{
-          Réalisation d'un jeu écrit en C/C++, utilisant la suite GNU Autotools et la bibliothèque graphique SDL.
-          Nous avons poursuivi ce projet durant plusieurs mois après l'avoir rendu.
-        }
-
-\section{Formation}
-\cventry{2016\,--\,actuel}{Préparation d'un diplôme Universitaire de Technologie en Informatique}{IUT}{\newline Aix-en-Provence}{}{}
-
-\cventry{2016}{Baccalauréat Scientifique, série Sciences de l'Ingénieur}{}{}{\mbox{mention \em{bien}}}{Spécialité Informatique et Sciences du Numérique}
 
 \section{Centres d'intérêt}
 \cvitem{\textbf{Événements}}{
-  Hack to the Future
+  Hack to the Future,
+  Nuit de l'Info 2017
 }
 
 \cvitem{\textbf{Veille technologique}}{
-  GNU/Linux,
+  GNU\,/\,Linux,
   programmation,
-  libre/Open Source,
+  libre\,/\,Open Source,
   Reddit,
   crypto-monnaies (Bitcoin),\newline
   communications sécurisées,
-  privacy
-}
-
-\cvitem{\textbf{Cartographie}}{
-  OpenStreetMap
+  vie privée
 }
 
 \cvitem{\textbf{Logiciel libre}}{
@@ -188,5 +171,25 @@
   Pratique compétitive au niveau régional,
   diplôme d'Initiateur SAE délivré par la FFME
 }
+
+%% \clearpage
+
+\section{Projets et réalisations}
+%% \cventry{2016}{Projet web}
+%%         {pédagogique, pentanôme}{}{}{
+%%           Réalisation d'un site web en HTML5, CSS3 et PHP, utilisant Gettext pour traduire du contenu.
+%%         }
+
+\cventry{2016}{Projet C++}
+        {pédagogique, quadrinôme}{}{}{
+          Réalisation d'un jeu en terminal écrit en C++, utilisant la bibliothèque ncurses.
+        }
+
+\cventry{3 mois\\2016}{Projet d'ISN}
+        {pédagogique continué en projet personnel, trinôme}{}{}{
+          Réalisation d'un jeu écrit en C/C++, utilisant la bibliothèque graphique SDL.
+          Nous avons poursuivi ce projet en dehors du cadre scolaire après l'avoir rendu.
+        }
+
 
 \end{document}
