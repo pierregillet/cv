@@ -27,7 +27,7 @@
 
 \maketitle
 
-\vspace{-6mm}
+%% \vspace{-10mm}
 \section{Projet professionnel}
 Passionné d'Informatique et de culture libre,
 je souhaite exercer le métier d'enseignant-chercheur en Informatique.
@@ -38,43 +38,46 @@ je souhaite exercer le métier d'enseignant-chercheur en Informatique.
   \textbf{Python},
   \textbf{Java},
   \textbf{C++},
-  PHP,
-  Bash,
-  JavaScript,
   C,
-  Assembleur (MIPS),
+  Kotlin (bases),
+  Bash,
+  Assembleur (sous-ensemble du MIPS),
+  GLSL (bases),
   algorithmique
+  %% JavaScript,
+  %% PHP,
 }
 
-\cvitem{Frameworks}{
+\cvitem{Frameworks et \\ bibliothèques}{
   \textbf{GTK+},
   \textbf{Qt},
-  Bootstrap,
+  \textbf{SDL2},
+  \textbf{SFML},
+  Boost,
+  %% Bokeh,
+  %% NumPy,
+  PyGame,
+  OpenGL,
+  %% GLEW,
+  %% GLM,
+  %% Bootstrap,
   Django,
   Flask,
   Symfony 3
-}
-
-\cvitem{Bibliothèques}{
-  \textbf{SDL},
-  \textbf{SFML},
-  Boost,
-  Bokeh,
-  NumPy,
-  PyGame
 }
 
 \cvitem{Développement}{
   \textbf{Design patterns},
   \textbf{Git},
   débuggers,
+  CMake,
   UML,
-  modèles conceptuels de données, 
-  intégration continue,
+  %% modèles conceptuels de données, 
+  intégration continue (Travis CI),
   tests unitaires et fonctionnels,
-  \textbf{GitHub}\,/\,GitLab\,/\,Gogs,
-  Meson,
-  GNU Make\,/\,Autotools
+  GitHub\,/\,GitLab,
+  %% Meson
+  %% GNU Make\,/\,Autotools
   %% Maven
 }
 
@@ -96,10 +99,12 @@ je souhaite exercer le métier d'enseignant-chercheur en Informatique.
 \cvitem{Bases de données}{
   SQL,
   PL\,/\,SQL,
-  MariaDB\,/\,MySQL\,/\,SQLite,
+  MariaDB\,/\,MySQL,
+  SQLite,
   Triggers,
+  Vues,
   PHPMyAdmin
-  %% MySQL Workbench
+  MySQL Workbench
 }
 
 \cvitem{IDE\,/\,Éditeurs}{
@@ -110,42 +115,56 @@ je souhaite exercer le métier d'enseignant-chercheur en Informatique.
   Qt Creator,
   \textbf{Emacs},
   Vim
-  %% Subliminal,
-  %% Atom
 }
 
 \textbf{Associées\newline}
 \cvitem{Langues}{
-  Anglais (CEFR niveau B1 ({\em Cambridge English Preliminary}), Bachelor en Écosse),\newline
-  Espagnol niveau débutant
+  %% Anglais (CEFR niveau B1 ({\em Cambridge English Preliminary}), Bachelor en Écosse),\newline
+  %% Espagnol niveau débutant
+  Anglais (Score de 965\,/\,990 au {\em TOEIC (listening \& reading)}, Bachelor en Écosse)
 }
 
 \cvitem{Autres}{
   \textbf{\LaTeX},
-  comptabilité,
   droit,
-  économie,
-  gestion d'entreprises,
   méthodes agiles
+  %% comptabilité,
+  %% économie,
+  %% gestion d'entreprises,
 }
 
 \section{Expérience professionnelle et projets personnels}
+\cventry{2019}{Stage}{Laboratoire d'Informatique \& Systèmes (LIS) de Marseille}{}{}{
+  Stage sur la Logique Modale des Hypothèses lié aux équipes CANA et LIRICA.
+}
+
+\cventry{2018\,-\,2019}{Projet durant le Bachelor}{pédagogique, monôme}{}{}{
+  Conception et réalisation d'un moteur de jeu écrit en C++ utilisant OpenGL et SDL2.
+}
+
+\cventry{2018\,-\,2019}{Projet durant le Bachelor}{pédagogique, monôme}{}{}{
+  Implémentation de l'algorithme de recherche de chemin IDA*.
+}
+
+\cventry{2018\,-\,2019}{Projet durant le Bachelor}{pédagogique, binôme}{}{}{
+  Création de plusieurs effets graphiques, tels que du flou de mouvement, de «\,l'alpha blending\,» et des ombres.
+}
+
 \cventry{2017\,-\,2018}{Chargé de projet}{Agence Boeki}{Aix-en-Provence}{alternance}{
   Réalisation d'un système de gestion de caisse en ligne avec le «\,framework\,» Symfony 3.
 }
 
-\cventry{2017}{OpenItinerary (projet tutoré)}{pédagogique, hexanôme}{}{}{
-  Conception d'un service de calculs d'itinéraires basé sur les cartes OpenStreetMap.
-}
-
-\cventry{2016}{Projet C++}{pédagogique, quadrinôme}{}{}{
-  Réalisation d'un jeu en terminal écrit en C++, utilisant la bibliothèque ncurses.
-}
-
 \cventry{2016}{Projet de terminale (ISN)}{pédagogique continué en projet personnel, binôme}{}{}{
-  Réalisation d'un jeu écrit en C/C++, utilisant la bibliothèque graphique SDL.\newline
-  Nous avons poursuivi le développement de ce projet en dehors du cadre scolaire après l'avoir rendu.
+  Réalisation d'un jeu écrit en C/C++, utilisant la bibliothèque graphique SDL.
 }
+
+%% \cventry{2017}{OpenItinerary (projet tutoré)}{pédagogique, hexanôme}{}{}{
+%%   Conception d'un service de calculs d'itinéraires basé sur les cartes OpenStreetMap.
+%% }
+
+%% \cventry{2016}{Projet C++}{pédagogique, quadrinôme}{}{}{
+%%   Réalisation d'un jeu en terminal écrit en C++, utilisant la bibliothèque ncurses.
+%% }
 
 %% \cventry{2016}{Projet web}
 %%         {pédagogique, pentanôme}{}{}{
@@ -153,13 +172,15 @@ je souhaite exercer le métier d'enseignant-chercheur en Informatique.
 %%         }
 
 \section{Formation}
-\cventry{2018--2019}{Bachelor en «\,Computer Games Technology\,»}{\newline University of the West of Scotland}{Paisley (Écosse)}{}{
-  Année réalisée dans le cadre du programme d'échange européen Erasmus.
-}
+\cventry{2018--2019}{Bachelor en «\,Computer Games Technology\,»}{\newline University of the West of Scotland}{Paisley (Écosse)}{}{}
+
+\cventry{2018--2019}{Licence Mathématiques-Informatique}{\newline Centre de télé-enseignement Aix-Marseille Université}{}{}{}
 
 \cventry{2018}{DUT Informatique en alternance}{IUT AMU}{Aix-en-Provence}{}{}
 
 \cventry{2016}{Baccalauréat Scientifique, série SI, spécialité ISN}{}{}{\mbox{mention \em{bien}}}{}
+
+\newpage
 
 \section{Centres d'intérêt}
 \cvitem{\textbf{Veille technologique}}{
@@ -169,12 +190,14 @@ je souhaite exercer le métier d'enseignant-chercheur en Informatique.
   Reddit,
   communications sécurisées,
   vie privée,
-  science et industrie spaciale,
-  transition énergétique
+  science et industrie spatiale,
+  transition énergétique,
+  jeux vidéos
   %% crypto-monnaies (Bitcoin)
 }
 
 \cvitem{\textbf{Événements}}{
+  Global Game Jam 2019 (Glasgow),
   Hack to the Future 2017,
   Nuit de l'Info 2017
 }
@@ -184,8 +207,8 @@ je souhaite exercer le métier d'enseignant-chercheur en Informatique.
 }
 
 \cvitem{\textbf{Escalade}}{
-  Pratique compétitive au niveau régional,
-  diplôme d'Initiateur SAE délivré par la FFME
+  Pratique compétitive au niveau régional (2012--2015),
+  diplôme d'Initiateur SAE délivré par la FFME (2016)
 }
         
 \end{document}
