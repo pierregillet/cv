@@ -27,23 +27,25 @@
 
 \maketitle
 
-%% \vspace{-10mm}
+\vspace{-10mm}
+
 \section{Projet professionnel}
-Passionné d'Informatique et de culture libre,
-je souhaite exercer le métier d'enseignant-chercheur en Informatique.
+Passionné d'informatique et de culture libre, je souhaite exercer le
+métier d'enseignant-chercheur en informatique.
 
 \section{Compétences et connaissances}
 \textbf{Spécialisées}\newline
 \cvitem{Langages}{
+  \textbf{Rust (apprentissage)},
   \textbf{Python},
   \textbf{Java},
   \textbf{C++},
   C,
-  Kotlin (bases),
   Bash,
-  Assembleur (sous-ensemble du MIPS),
-  GLSL (bases),
+  GLSL (bases),
   algorithmique
+  %% Kotlin (bases),
+  %% Assembleur (bases),
   %% JavaScript,
   %% PHP,
 }
@@ -53,29 +55,33 @@ je souhaite exercer le métier d'enseignant-chercheur en Informatique.
   \textbf{Qt},
   \textbf{SDL2},
   \textbf{SFML},
-  Boost,
+  JavaFX,
+  %% Boost,
   %% Bokeh,
   %% NumPy,
-  PyGame,
+  %% PyGame,
   OpenGL,
   %% GLEW,
   %% GLM,
   %% Bootstrap,
-  Django,
-  Flask,
-  Symfony 3
+  %% Django,
+  %% Flask,
+  Symfony 3,
+  Scikit-learn
 }
 
 \cvitem{Développement}{
   \textbf{Design patterns},
-  \textbf{Git},
+  \textbf{Git} (compétences avancées),
   débuggers,
   CMake,
   UML,
   %% modèles conceptuels de données, 
-  intégration continue (Travis CI),
+  intégration continue (bases),
   tests unitaires et fonctionnels,
-  GitHub\,/\,GitLab,
+  complexité,
+  modélisation CSP et SAT
+  %% GitHub\,/\,GitLab,
   %% Meson
   %% GNU Make\,/\,Autotools
   %% Maven
@@ -83,50 +89,57 @@ je souhaite exercer le métier d'enseignant-chercheur en Informatique.
 
 \cvitem{Systèmes}{
   GNU\,/\,Linux (\textbf{Arch Linux}, Debian),
-  Docker
+  Docker,
+  Vagrant,
+  Salt
   %% VirtualBox
 }
 
 \cvitem{Réseaux}{
   \textbf{Nginx},
-  Apache 2,
+  Apache,
   DNS,
   DHCP,
-  routage
+  routage,
+  6to4
   %% Spanning Tree Protocol
 }
 
 \cvitem{Bases de données}{
   SQL,
-  PL\,/\,SQL,
+  % PL\,/\,SQL,
   MariaDB\,/\,MySQL,
-  SQLite,
-  Triggers,
-  Vues,
-  PHPMyAdmin
-  MySQL Workbench
+  % SQLite,
+  % Triggers,
+  % Vues,
+  PHPMyAdmin,
+  MySQL Workbench
 }
 
 \cvitem{IDE\,/\,Éditeurs}{
-  \textbf{IntelliJ IDEA},
-  \textbf{PyCharm},
-  \textbf{CLion},
-  PhpStorm,
-  Qt Creator,
+  \textbf{VS Code},
+  \textbf{IDE JetBrains},
+  % \textbf{IntelliJ IDEA},
+  % PyCharm,
+  % CLion,
+  % PhpStorm,
+  Qt Creator,
   \textbf{Emacs},
   Vim
 }
+
+\vspace{4mm}
 
 \textbf{Associées\newline}
 \cvitem{Langues}{
   %% Anglais (CEFR niveau B1 ({\em Cambridge English Preliminary}), Bachelor en Écosse),\newline
   %% Espagnol niveau débutant
-  Anglais (Score de 965\,/\,990 au {\em TOEIC (listening \& reading)}, Bachelor en Écosse)
+  Anglais -- score de 106\,/\,120 au \emph{TOEFL iBT} le 2019-12-07, Bachelor en Écosse
 }
 
 \cvitem{Autres}{
   \textbf{\LaTeX},
-  droit,
+  % droit,
   méthodes agiles
   %% comptabilité,
   %% économie,
@@ -134,29 +147,29 @@ je souhaite exercer le métier d'enseignant-chercheur en Informatique.
 }
 
 \section{Expérience professionnelle et projets personnels}
-\cventry{2019}{Stage}{Laboratoire d'Informatique \& Systèmes (LIS) de Marseille}{}{}{
-  Stage sur la Logique Modale des Hypothèses lié aux équipes CANA et LIRICA.
+\cventry{2020}{Stage de 2 mois}{Laboratoire d'Informatique \& Systèmes (LIS) de Marseille}{}{}{
+  Travail sur un système de calcul argumentatif en IA symbolique.% (équipe LIRICA).
 }
 
-\cventry{2018\,-\,2019}{Projet durant le Bachelor}{pédagogique, monôme}{}{}{
-  Conception et réalisation d'un moteur de jeu écrit en C++ utilisant OpenGL et SDL2.
+\cventry{2019}{Stage de 2 mois}{Laboratoire d'Informatique \& Systèmes (LIS) de Marseille}{}{}{
+  Travail sur un solveur max-SAT en logique modale des hypothèses.% (équipes CANA et LIRICA).
 }
 
-\cventry{2018\,-\,2019}{Projet durant le Bachelor}{pédagogique, monôme}{}{}{
-  Implémentation de l'algorithme de recherche de chemin IDA*.
+\cventry{2018\,-\,2019}{Projets durant le Bachelor}{pédagogiques}{}{}{
+  \begin{itemize}
+  \item Conception et réalisation d'un moteur de jeu écrit en C++ utilisant OpenGL et SDL2.
+  \item Implémentation de l'algorithme de recherche de chemin IDA*.
+  \item Création de plusieurs effets graphiques, notamment de «\,l'alpha blending\,» et des ombres.
+  \end{itemize}
 }
 
-\cventry{2018\,-\,2019}{Projet durant le Bachelor}{pédagogique, binôme}{}{}{
-  Création de plusieurs effets graphiques, tels que du flou de mouvement, de «\,l'alpha blending\,» et des ombres.
-}
-
-\cventry{2017\,-\,2018}{Chargé de projet}{Agence Boeki}{Aix-en-Provence}{alternance}{
+\cventry{2017\,-\,2018}{Chargé de projet}{Agence Boeki}{Aix-en-Provence}{DUT en alternance}{
   Réalisation d'un système de gestion de caisse en ligne avec le «\,framework\,» Symfony 3.
 }
 
-\cventry{2016}{Projet de terminale (ISN)}{pédagogique continué en projet personnel, binôme}{}{}{
-  Réalisation d'un jeu écrit en C/C++, utilisant la bibliothèque graphique SDL.
-}
+% \cventry{2016}{Projet de terminale (ISN)}{pédagogique continué en projet personnel, binôme}{}{}{
+%   Réalisation d'un jeu écrit en C/C++, utilisant la bibliothèque graphique SDL.
+% }
 
 %% \cventry{2017}{OpenItinerary (projet tutoré)}{pédagogique, hexanôme}{}{}{
 %%   Conception d'un service de calculs d'itinéraires basé sur les cartes OpenStreetMap.
@@ -172,15 +185,15 @@ je souhaite exercer le métier d'enseignant-chercheur en Informatique.
 %%         }
 
 \section{Formation}
-\cventry{2018--2019}{Bachelor en «\,Computer Games Technology\,»}{\newline University of the West of Scotland}{Paisley (Écosse)}{}{}
+\cventry{2019--2021}{Master Informatique}{\newline Parcours Intelligence Artificielle et Apprentissage Automatique}{Aix-Marseille Université}{}{}
 
-\cventry{2018--2019}{Licence Mathématiques-Informatique}{\newline Centre de télé-enseignement Aix-Marseille Université}{}{}{}
+\cventry{2018--2019}{Bachelor en «\,Computer Games Technology\,»}{\newline University of the West of Scotland}{Paisley (Écosse)}{}{}
 
 \cventry{2018}{DUT Informatique en alternance}{IUT AMU}{Aix-en-Provence}{}{}
 
 \cventry{2016}{Baccalauréat Scientifique, série SI, spécialité ISN}{}{}{\mbox{mention \em{bien}}}{}
 
-\newpage
+% \newpage
 
 \section{Centres d'intérêt}
 \cvitem{\textbf{Veille technologique}}{
@@ -202,9 +215,9 @@ je souhaite exercer le métier d'enseignant-chercheur en Informatique.
   Nuit de l'Info 2017
 }
 
-\cvitem{\textbf{Logiciel libre}}{
-  Contributions au développement de logiciels libres
-}
+% \cvitem{\textbf{Logiciel libre}}{
+%   Contributions au développement de logiciels libres
+% }
 
 \cvitem{\textbf{Escalade}}{
   Pratique compétitive au niveau régional (2012--2015),
@@ -212,3 +225,8 @@ je souhaite exercer le métier d'enseignant-chercheur en Informatique.
 }
         
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
